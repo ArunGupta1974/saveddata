@@ -1,0 +1,12 @@
+t3://lxappu013a.hphc.org:8005 cngint cngintsit1 jms/ohi/OHIQueueConnectionFactory HPHC.SIT.CNG.CLAIMIN.REQUEST.IN C:\SpiralWeb\claims ohiInstanceName:ohisit1
+
+C:\OneRoof\Tool\bin
+
+java  -noverify -jar MessagesIntoJMSOracle.jar t3://lxappu013a.hphc.org:8005 cngint cngintsit1 jms/ohi/OHIQueueConnectionFactory HPHC.SIT.CNG.CLAIMIN.REQUEST.IN C:\OHI\claims ohiInstanceName:ohisit1
+
+C:\SpiralWeb\PublishMsgToJMSOracle>java  -noverify -jar C:\SpiralWeb\PublishMsgToJMSOracle\MessagesIntoJMSOracle.jar t3://lxappu013a.hphc.org:8005 cngint cngintsit1 jms/ohi/OHIQueueConnectionFactory HPHC.SIT.CNG.CLAIMIN.REQUEST.IN C:\SpiralWeb\claims ohiInstanceName:ohisit1
+
+select reference_code, error_status, error_description, create_date 
+from MSGRECON.MESSAGE_REGISTER t Where t.reference_code IN ('160208M2FU38')  
+
+C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\SpiralTest\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll
